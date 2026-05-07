@@ -1,36 +1,36 @@
-# License
+# ライセンス
 
-## Documentation license
+## ドキュメントのライセンス
 
-The public documentation in this repository is licensed under the Creative Commons Attribution 4.0 International License.
+このリポジトリで公開しているドキュメントは、Creative Commons Attribution 4.0 International License で公開します。
 
 SPDX-License-Identifier: CC-BY-4.0
 
-License text:
+ライセンス本文:
 
 https://creativecommons.org/licenses/by/4.0/
 
-## Applies to
+## 適用範囲
 
-This documentation license applies to:
+このドキュメントライセンスは、次のものに適用します。
 
-- Markdown documentation in this repository
-- Diagrams included in this repository
-- Explanatory text, design notes, and public checklists
+- このリポジトリ内のMarkdownドキュメント
+- このリポジトリ内の図
+- 説明文、設計メモ、公開用チェックリスト
 
-Recommended attribution:
+推奨する表記:
 
 > T265 Runtime API Design Showcase, by the repository author.
 
-## Does not apply to
+## 適用しないもの
 
-This license does not grant rights to:
+このライセンスは、次のものへの権利を許諾するものではありません。
 
-- Private implementation source code
-- Header files or implementation details that are not published here
-- Firmware binaries or firmware-derived files
-- Device-specific configuration, including serial-number or role mappings
-- Private validation logs, USB captures, or raw dumps
-- Intel, RealSense, librealsense, SDK components, firmware, trademarks, or third-party materials
+- 非公開実装のソースコード
+- このリポジトリで公開していないヘッダファイルや実装詳細
+- firmware binary、またはfirmwareに由来するファイル
+- serial-numberやrole mappingを含む実機固有設定
+- private validation log、USB capture、raw dump
+- Intel、RealSense、librealsense、SDK component、firmware、商標、その他第三者資料
 
-Those materials are outside the scope of this public documentation repository.
+これらは、この公開ドキュメントリポジトリの範囲外です。

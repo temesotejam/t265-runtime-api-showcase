@@ -1,18 +1,16 @@
-# T265 Runtime API — Design Showcase
+# T265 Runtime API — 設計資料ショーケース
 
 Intel RealSense T265 を Linux 上で扱うために、どのように調査し、どのように API と runtime 構造を考え、どこを重要視して実装したかをまとめた公開用ドキュメントです。
 
-このリポジトリは **コード公開ではなく、設計資料・技術調査メモ・成果説明用の showcase** です。実装コード全体、firmware、実機固有設定、生ログは含めていません。
+このリポジトリは **コード公開ではなく、設計資料・技術調査メモ・成果説明用のショーケース** です。実装コード全体、firmware、実機固有設定、生ログは含めていません。
 
-## Scope
+## 範囲
 
 このリポジトリは、`librealsense` の完全な代替実装を公開するものではありません。
 
 非公開実装では、Intel RealSense T265 の runtime mode におけるアクセス方法、API設計、queue処理、同期、検証方法を調査しました。この公開リポジトリでは、実装コードではなく設計思想・調査観点・検証方針のみを公開しています。
 
 firmware loader、完全なdriver、production-ready SDKは含みません。
-
-This repository is not a full replacement for `librealsense`. The private implementation focused on exploring runtime-mode access patterns, API design, queueing, synchronization, and verification strategy for Intel RealSense T265. This public repository intentionally contains design notes only. It does not provide a complete driver, firmware loader, or production-ready SDK.
 
 ## この資料の目的
 
@@ -52,10 +50,10 @@ This repository is not a full replacement for `librealsense`. The private implem
 - 調査観点
 - アーキテクチャ説明
 - API分類の考え方
-- API contract の考え方
+- API契約の考え方
 - queue / threading / syncer の設計メモ
 - 匿名化した実機検証サマリと見るべきポイント
-- timestamp / coordinate frame の注意点
+- timestamp / 座標系の注意点
 - 公開・非公開の境界線
 - 将来の改善案
 - Mermaid形式の構成図
@@ -92,7 +90,7 @@ This repository is not a full replacement for `librealsense`. The private implem
 - [`docs/03_RESEARCH_MAP.md`](docs/03_RESEARCH_MAP.md)
 - [`docs/APPENDIX_CHECKLISTS.md`](docs/APPENDIX_CHECKLISTS.md)
 
-## Repository map
+## リポジトリ構成
 
 ```text
 T265_API_SHOWCASE_DOCS_PUBLIC/
@@ -129,12 +127,12 @@ T265_API_SHOWCASE_DOCS_PUBLIC/
     └── keywords_to_search.md
 ```
 
-## Status
+## 状態
 
-This is a sanitized public documentation package. A private implementation was used for validation, but it is intentionally outside the public repository because it involves implementation details, firmware handling, device-specific configuration, and private logs.
+これは公開用に整理したドキュメントパッケージです。検証には非公開実装を使いましたが、実装詳細、firmware handling、実機固有設定、private logを含むため、この公開リポジトリの外に置いています。
 
-This repository is independent and unofficial. It should be read as design notes and verification strategy, not as an official Intel / RealSense project.
+このリポジトリは独立した非公式資料です。Intel / RealSense の公式プロジェクトではなく、設計メモと検証方針として読んでください。
 
-## License
+## ライセンス
 
 このリポジトリ内の文章・図は `LICENSE.md` の条件で公開します。実装コードや firmware に対する権利は、この公開資料には含まれません。

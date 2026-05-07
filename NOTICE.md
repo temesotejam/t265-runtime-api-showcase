@@ -1,22 +1,22 @@
-# Notice
+# 注意事項
 
-This repository is an independent technical note and design showcase about experiments around Intel RealSense T265 runtime handling.
+このリポジトリは、Intel RealSense T265 のruntime handlingに関する実験から作成した、独立した技術メモ・設計資料ショーケースです。
 
-It is not affiliated with, endorsed by, or sponsored by Intel Corporation, RealSense, Inc., or any related organization.
+Intel Corporation、RealSense, Inc.、または関連組織と提携しているものではなく、承認・後援を受けたものでもありません。
 
-Names such as Intel, RealSense, Intel RealSense, and librealsense may be trademarks or project names of their respective owners. They are used here only to identify the device and technical context.
+Intel、RealSense、Intel RealSense、librealsense などの名称は、それぞれの所有者の商標またはプロジェクト名である可能性があります。この資料では、対象デバイスと技術的文脈を示す目的でのみ使用しています。
 
-This repository is not an official project, not a complete driver, not a firmware loader, and not a production-ready SDK.
+このリポジトリは公式プロジェクトではありません。また、完全なdriver、firmware loader、production-ready SDKでもありません。
 
-The public repository intentionally does not include:
+この公開リポジトリには、意図的に次のものを含めていません。
 
-- Firmware binaries
-- Firmware redistribution instructions
-- Full implementation source code
-- Header file contents
-- Private serial-number or role configuration
-- Raw USB captures or USB dumps
-- Private validation logs
-- Built executables or object files
+- Firmware binary
+- Firmwareの再配布手順
+- 実装ソースコード全体
+- ヘッダファイル本文
+- privateなserial-number / role configuration
+- Raw USB capture / USB dump
+- Private validation log
+- ビルド済み実行ファイルやobject file
 
-A private implementation and private validation logs were used to guide these notes, but they are not published here.
+この資料を作るにあたり、非公開実装とprivate validation logを参考にしていますが、それらはここでは公開していません。
