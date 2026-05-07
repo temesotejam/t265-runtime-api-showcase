@@ -1,0 +1,12 @@
+flowchart LR
+    A[What do you need?] --> B{Control loop?}
+    B -->|Yes| C[Use latest state API]
+    B -->|No| D{Need ordered samples?}
+    D -->|Yes| E[Use queue / multi-queue]
+    D -->|No| F{Need image + pose relation?}
+    F -->|Yes| G[Use syncer with threshold]
+    F -->|No| H[Use simple reader for smoke test]
+    E --> I{Multiple sample kinds?}
+    I -->|Yes| J[Prefer multi-queue]
+    I -->|No| K[Single queue is okay for probes]
+

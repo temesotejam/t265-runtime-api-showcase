@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant Device as T265
+    participant Reader as Reader thread
+    participant Callback as Callback
+    participant Latest as Latest state
+    participant Queue as Multi-queue
+    participant App as Application
+
+    Device->>Reader: pose / IMU / fisheye samples
+    Reader->>Callback: lightweight dispatch
+    Callback->>Latest: update current state
+    Callback->>Queue: push sample
+    App->>Latest: read newest state for control
+    App->>Queue: pop ordered samples for logging
+

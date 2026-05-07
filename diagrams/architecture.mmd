@@ -1,0 +1,14 @@
+flowchart TD
+    A[T265 device] --> B[Linux USB stack]
+    B --> C[libusb layer]
+    C --> D[runtime core]
+    D --> E[reader / callback]
+    E --> F[latest state API]
+    E --> G[queue API]
+    E --> H[multi-queue API]
+    H --> I[syncer]
+    F --> J[control application]
+    G --> K[logging / analysis]
+    H --> K
+    I --> L[timestamp-aware processing]
+

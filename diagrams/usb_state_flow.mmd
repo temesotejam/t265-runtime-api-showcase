@@ -1,0 +1,11 @@
+stateDiagram-v2
+    [*] --> Unknown
+    Unknown --> Runtime: visible as 8087:0b37
+    Unknown --> Bootloader: visible as 03e7:2150
+    Bootloader --> Runtime: local permitted firmware load
+    Runtime --> RuntimeAPI: open / configure / start streams
+    RuntimeAPI --> Samples: pose / IMU / fisheye
+    Samples --> LatestState
+    Samples --> Queues
+    Samples --> Syncer
+
